@@ -35,12 +35,11 @@
             border-radius: 8px;
         }
         .h1 {
-            padding-top: 30px;
+            padding-top: 10px;
             margin-bottom: 0px;
         }
         .div-main {
             display: flex;
-            align-items: center;
         }
 
         .form-box{
@@ -62,6 +61,17 @@
         .fa-brands:hover {
             transition: transform 0.4s ease-in-out;
             transform: scale(2) ;
+        }
+        #submit-btn {
+            display: flex;
+            position: relative;
+            left: 495px;
+            font-family: "Poppins";
+            font-weight: 500;
+            background-color: #a7c957;
+            color: #faf9f9;
+            border: #faf9f9;
+            box-shadow: 2px 2px 2px #ffe6a7;
         }
         a {
             text-decoration: none;
@@ -88,11 +98,12 @@
         <div class="div-main">
         <div>
         <form action="">
+            <br>
             <label for="user-fullname">Full Name: </label>
             <input type="text" name="fullname" id="user-fullname" class="form-box">
             <br>
             <label for="user-email">Email: </label>
-            <input type="email" name="email" id="user-email" class="form-box">
+            <input type="email" name="email" id="user-email" class="form-box" required>
             <br>
             <label for="user-message" class="form-box">Send me a Message here: </label>
             <br>
@@ -101,9 +112,8 @@
             <label for="user-sugg" class="form-box">Comments/Suggestions: </label>
             <br>
             <textarea name="sugg" id="user-sugg" style="width: 550px; height: 100px; max-height: 120px; max-width: 600px;"></textarea>
-            <br><br>
-
-
+            <br>
+            <button type="submit" id="submit-btn">Submit</button>
         </form>
         </div>
         <img src="./assets/images/Contact.png" alt="" style="margin-left: 100px;" height="400px">
