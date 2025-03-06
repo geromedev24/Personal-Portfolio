@@ -3,93 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me</title>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/icons/android-chrome-192x192.png"
-    />
+    <title>The Midlife Coder</title>
+    <link rel="stylesheet" href="./styles.css" />
     <script
       src="https://kit.fontawesome.com/d57e9af562.js"
       crossorigin="anonymous"
     ></script>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-        .nav-list-container {
-            display: inline-block;
-            margin-left: 150px;
-        }
-        .nav-list {
-            display: inline-block;
-            color: #284b63;
-            font-weight: 600;
-            text-align: center;
-            width: 150px;
-            padding: 5px;
-            box-shadow: 2px 4px 8px -1px #bcb8b1;
-            margin-right: 30px;
-            border-radius: 8px;
-        }
-        .h1 {
-            padding-top: 50px;
-        }
-        .div-main {
-            display: flex;
-            align-items: center;
-        }
-        .footer {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            margin-top: 50px;
-            margin-right: 170px;
-        }
-        .fa-brands {
-            font-size: 30px;
-            margin-left: 50px;
-        }
-
-        .fa-brands:hover {
-            transition: transform 0.4s ease-in-out;
-            transform: scale(2) ;
-        }
-
-        a {
-            text-decoration: none;
-            color: #284b63;
-        }
-
-    </style>
   </head>
-  <body style="font-family: Poppins; background-color: f7fff7;">
-    <header style="margin-top: 50px; margin-left: 50px;">
-      <img src="./assets/Logo/MLC Logo Name.png" alt="MLC Logo" height= "30px"/>
-      <nav class="nav-list-container" style="font-family: Commissioner;">
-        <ul>
-        <li class="nav-list"><a href="./index.html"  target="_blank">Home</a></li>
-        <li class="nav-list">About Me</li>
-        <li class="nav-list"><a href="./contact.html"  target="_blank">Contact</a></li>
-        <li class="nav-list"><a href="./certificates.html"  target="_blank">Certificate</a></li>
-        <li class="nav-list"><a href="./experience.html"  target="_blank">Experience</a></li>
-    </ul>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="nav-container">
+        <div>
+          <img
+            src="./assets/Logo/Profile Logo.PNG"
+            alt="MLC Logo"
+            class="mlc-logo"
+          />
+        </div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Experience</a></li>
+          </ul>
+        </div>
+        <div class="hire-me">
+          <a href=""> Let's Work Together</a>
+        </div>
       </nav>
     </header>
-    <main style="margin-left: 150px; margin-top: 50px; width: 1200px; height: 400px;">
-        <h1 class="h1">About Midlife Coder!</h1>
-        <div class="div-main">
-            <img src="./assets/images/Aboutme.png" alt="" height="330px">
-        <p style="width: 600px; text-align: justify; line-height: 30px; margin-left: 60px;">Account Manager in morning and a web developer at night, I wanted to push myself into the boundaries of creating something that would help other people and professionals like me showcase their skills and passion. A graduate of Entreprenuerial Management course, I started my career as an account manager in one of the largest and most reputable software company. I currently hone my skills with the MERN stack and aims to develop websites that would generate buzz and revenue to my prospective clients. </p>
+    <!-- Hero section -->
+    <main class="hero">
+      <section>
+        <div class="hero-statement">
+          <h1>Turning Websites into ideas</h1>
+          <p>Websites are ought to be fun and driving expected results.</p>
         </div>
+        <div class="pitch">
+          <h1>
+            Your Midlife Frontend Developer who creates <br />
+            awesome websites
+          </h1>
+          <p>
+            Hi, I'm <strong>Gerome</strong>, a frontend developer who turns
+            creative ideas into remarkable and visually stunning websites. I
+            create fast, picture-quality, responsive, and user-friendly websites
+            that are also driving results.
+          </p>
+          <div class="hire-me open-opp"><a href="./contact.html">Open For Opportunity</a></div>
+        </div>
+      </section>
     </main>
-    <footer class="footer">
-        <img src="./assets/Logo/the-midlife-coder-high-resolution-logo.png" alt="" height="120px">
-        <a href="#"><i class="fa-brands fa-github"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></i></a>
+    <!-- About me -->
+    <section>
+      <div class="about-container">
+        <div class="about-content">
+          <h2 class="sec-heading about-me">About the Midlife Coder</h2>
+          <p>
+            I find passion as a web-developer to turn ideas into websites that
+            drive results. I love working with visionary teams and individuals
+            that requires expertise in
+            <strong>HTML, CSS, Javascript, and SEO </strong> to get ahead of
+            their competition by creating stunning web pages to build seamless
+            user experience and attract more clients.
+          </p>
+          <h2 class="sec-heading goal">Vision</h2>
+          <p>
+            My goal is develop landing pages and websites that stand out from
+            the rest. By developing websites that are accessible, user and SEO
+            friendly, I'm confident that my services will add more value to your
+            business regardless if you're a start-up or established
+            entreprenuer.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <img src="./assets/Logo/Profile Logo.PNG" alt="" />
+        <div class="socials">
+          <i class="fa-brands fa-github fa-2xl"></i>
+          <i class="fa-brands fa-youtube fa-2xl" style="color: #f90101"></i>
+          <i class="fa-brands fa-facebook-f fa-2xl"></i>
+          <i class="fa-brands fa-tiktok fa-2xl"></i>
+          <i class="fa-brands fa-instagram fa-2xl"></i>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Experience</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <p>Contact:</p>
+          <p>Number:</p>
+          <p>+63-917-866-3517</p>
+          <p>Email:</p>
+          <p>geromed1224@gmail.com</p>
+        </div>
+        <div class="footer-end">
+          <p>Copyright &copy;</p>
+          <p>| The Midlife Coder |</p>
+          <p>All Rights Reserved</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

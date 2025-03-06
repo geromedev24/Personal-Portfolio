@@ -1,0 +1,129 @@
+/* Font Manrope, Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Browser style-reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+nav.nav-container {
+  margin: 30px auto;
+}
+
+.nav-container img {
+  height: 80px;
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  gap: 30px;
+  background-color: aqua;
+}
+
+.nav-container .nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 3px whitesmoke;
+  width: 550px;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.hire-me {
+  background-color: blue;
+  padding: 10px 8px;
+  border-radius: 30px;
+}
+
+main.hero {
+  margin: 60px 0;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+
+main.hero section .hero-statement,
+.pitch {
+  padding-bottom: 20px;
+}
+
+main.hero section h1,
+p {
+  padding: 30px 0;
+}
+
+main.hero .pitch .open-opp {
+  width: 500px;
+  margin: 0 auto;
+}
+
+section .offer-container {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  justify-content: space-around;
+  align-content: center;
+  gap: 30px;
+}
+
+section .offerings {
+  width: 300px;
+  gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+section .offerings h2 {
+  text-align: center;
+  align-content: center;
+  height: 5vh;
+  font-size: 1.4rem;
+}
+
+section .offerings p {
+  text-align: center;
+  font-size: 0.9rem;
+  height: 20vh;
+  padding: 50px 10px;
+}
+
+section .offerings span {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+section .offerings p .fa-solid {
+  position: relative;
+  top: 80px;
+  font-size: 40px;
+}
