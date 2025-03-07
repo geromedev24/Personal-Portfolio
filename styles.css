@@ -97,7 +97,7 @@ section .offer-container {
 }
 
 section .offerings {
-  width: 300px;
+  width: 280px;
   gap: 20px;
   display: flex;
   justify-content: space-around;
@@ -106,15 +106,13 @@ section .offerings {
 section .offerings h2 {
   text-align: center;
   align-content: center;
-  height: 5vh;
+  height: 70px;
   font-size: 1.4rem;
 }
 
 section .offerings p {
   text-align: center;
   font-size: 0.9rem;
-  height: 20vh;
-  padding: 50px 10px;
 }
 
 section .offerings span {
@@ -122,8 +120,48 @@ section .offerings span {
   text-align: center;
 }
 
-section .offerings p .fa-solid {
-  position: relative;
-  top: 80px;
-  font-size: 40px;
+section .offerings p > i {
+  font-size: 1.7rem;
+  color: gray;
+  margin: 0px 20px;
+}
+
+footer {
+  width: 1000px;
+  margin: 50px auto;
+  font-size: 0.6rem;
+}
+
+footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+footer .footer-container > img {
+  width: 150px;
+  grid-area: 1/1/2/2;
+}
+
+footer .footer-container .socials {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  grid-area: 1/2/2/3;
+  gap: 20px;
+}
+
+footer .footer-links ul {
+  list-style: none;
+  padding-top: 20px;
+  line-height: 20px;
+}
+
+footer .footer-links ul li {
+  padding: 10px 0;
+}
+
+footer .footer-links ul a {
+  color: black;
 }
