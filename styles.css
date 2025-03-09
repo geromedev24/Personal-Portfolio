@@ -92,14 +92,14 @@ main.hero {
 .hero-stmt-container {
   display: flex;
   flex-wrap: wrap-reverse;
-  align-content: center;
+  align-content: baseline;
   justify-content: space-around;
-  gap: 2rem;
 }
 
 .hero-statement {
   position: relative;
   top: 8vh;
+  text-align: left;
 }
 
 .hero-statement > h1 {
@@ -115,8 +115,7 @@ main.hero {
   position: relative;
   top: -2em;
   right: -8%;
-  gap: 0.5em;
-  width: 35vw;
+  width: 28vw;
   height: 40vh;
 }
 
@@ -126,25 +125,25 @@ main.hero {
   box-shadow: 2px 3px 10px #fca311;
 }
 
+#business-page {
+  top: 14em;
+  right: 5em;
+  width: 18em;
+  z-index: 1;
+}
+
 #backdrop-image {
-  /* top: 4vh; */
+  top: 3em;
   right: 8em;
-  width: 40em;
+  width: 25em;
   z-index: 2;
   box-shadow: none;
 }
 
-#business-page {
-  top: 19em;
-  right: 2em;
-  width: 32em;
-  z-index: 1;
-}
-
 #fitness-page {
-  top: 17em;
+  top: 12em;
   right: 20em;
-  width: 30em;
+  width: 15em;
   z-index: 3;
 }
 
@@ -156,7 +155,7 @@ main.hero {
 #pitch-container {
   position: relative;
   display: flex;
-  margin-top: 3vh;
+  margin-top: 9vh;
   width: 100vw;
   height: 40vh;
   color: #013a63;
@@ -175,8 +174,8 @@ main.hero {
 }
 
 .pitch > p {
-  font-size: 1.3rem;
-  padding: 0 25vw;
+  font-size: 1.2rem;
+  padding: 0 20vw;
 }
 
 main.hero .pitch .open-opp {
