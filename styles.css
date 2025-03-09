@@ -103,18 +103,18 @@ main.hero {
 }
 
 .hero-statement > h1 {
-  font-size: 5em;
+  font-size: 3.5em;
 }
 
 .hero-statement > p {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 .hero-image {
   /* Hero image container */
   position: relative;
   top: -2em;
-  right: -4%;
+  right: -8%;
   gap: 0.5em;
   width: 35vw;
   height: 40vh;
