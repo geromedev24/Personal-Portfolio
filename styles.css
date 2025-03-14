@@ -10,7 +10,7 @@
 }
 
 body {
-  max-width: 90vw;
+  max-width: 1300px;
   margin: 0 auto;
   background-color: #013a63;
   background-image: url(./assets/images/background-image.png);
@@ -23,20 +23,20 @@ body {
 
 /* Navigation Bar */
 nav.nav-container {
-  margin: 2vh auto;
-  width: 90vw;
+  margin: 3px auto;
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  gap: 2vw;
+  gap: 20px;
   backdrop-filter: blur(1.1px);
-  box-shadow: 0px 5px 15px #979dac5c;
+  box-shadow: 0px 5px 15px 5px #979dac5c;
 }
 
 .nav-container img {
-  height: 6vh;
+  height: 50px;
 }
 
 .nav-container .nav-links {
@@ -45,11 +45,11 @@ nav.nav-container {
   justify-content: flex-start;
   align-items: center;
   align-content: center;
-  gap: 2vw;
+  gap: 20px;
   list-style: none;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  width: 48vw;
+  width: 400px;
 }
 
 a {
@@ -59,22 +59,23 @@ a {
 
 .hire-me {
   background-color: #3e92cc;
-  font-size: 1.3em;
+  font-size: 1.1em;
   letter-spacing: 2px;
   font-weight: 700;
-  padding: 10px 8px;
+  padding: 8px 5px;
   border-radius: 30px;
-  width: 12vw;
+  width: 250px;
   text-align: center;
 }
 
 .nav-icons {
   display: flex;
-  gap: 1vw;
+  gap: 15px;
 }
 
 .nav-icons div > i {
   color: #ffffff4f;
+  font-size: 18px;
 }
 
 /*Hero Space */
@@ -87,17 +88,16 @@ section {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   align-content: center;
-  margin-top: 3em;
-  gap: 2rem;
+  margin-top: 25px;
+  gap: 20px;
   padding: 20px;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.3px;
 }
 
 main.hero {
-  margin: 3vh 0;
   text-align: center;
   color: #ffff;
 }
@@ -105,84 +105,59 @@ main.hero {
 .hero-stmt-container {
   display: flex;
   flex-wrap: wrap-reverse;
-  align-content: baseline;
+  align-content: center;
   justify-content: space-around;
-  width: 90vw;
-  gap: 5vh;
+  width: 98%;
+  gap: 20px;
 }
 
 .hero-statement {
-  position: relative;
-  top: 8vh;
+  /* position: relative; */
+  /* top: 40px; */
   text-align: left;
 }
 
 .hero-statement > h1 {
-  font-size: 5em;
+  font-size: 40px;
 }
 
 .hero-statement > p {
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
 
 .hero-image {
   /* Hero image container */
-  position: relative;
-  top: -2em;
-  right: 8%;
-  width: 28vw;
-  height: 40vh;
+  width: 600px;
 }
 
 .hero-image img {
   /* Each image */
-  position: absolute;
-  box-shadow: 2px 3px 10px #fca311;
+  position: relative;
 }
 
-#business-page {
-  top: 15em;
-  left: 16em;
-  width: 35em;
-  z-index: 1;
-}
-
-#backdrop-image {
-  top: 1em;
-  left: -5%;
-  width: 40em;
-  z-index: 2;
-  box-shadow: none;
-}
-
-#fitness-page {
-  top: 19em;
-  left: -1em;
-  width: 30em;
-  z-index: 3;
+#hero-image {
+  width: 600px;
+  filter: drop-shadow(2px 8px 15px #fca311);
 }
 
 #hero-whitespace {
-  height: 18vh;
-  width: 90vw;
+  height: 30px;
+  width: 95vw;
 }
 
 #pitch-container {
-  position: relative;
-  display: flex;
-  margin-top: 2vh;
-  width: 100vw;
-  height: 40vh;
-  color: #013a63;
+  /* position: relative; */
+  width: 130vw;
 }
 .pitch {
-  position: absolute;
-  translate: -6% 0;
+  /* position: absolute; */
   background-color: #ffffff;
-  width: 100vw;
+  color: #013a63;
+  /* left: 0;
+  top: 0; */
+  width: 100%;
   border-top: 8px solid #8daa91;
   border-bottom: 8px solid #8daa91;
-  padding: 5vh 0;
   box-shadow: 3px 3px 10px #72ddf7;
 }
 
@@ -191,21 +166,21 @@ main.hero {
 }
 
 .pitch > p {
-  font-size: 1.5rem;
-  padding: 0 20vw;
+  font-size: 1.2rem;
+  text-wrap: balance;
+  padding: 0 50px;
 }
 
 main.hero .pitch .open-opp {
   width: 20vw;
-  margin: 1.5em auto 1.5em;
+  margin: 50px auto 20px;
 }
 
 section .offer-container {
-  width: 80vw;
+  width: 1300px;
   display: flex;
   flex-wrap: wrap;
-  flex-basis: auto;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-content: center;
   gap: 30px;
   padding: 3vh 0;
@@ -216,11 +191,8 @@ section .offer-container {
 }
 
 section .offerings {
-  width: 20vw;
+  width: 350px;
   gap: 20px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
   background-color: #f8f9fa;
   padding: 1vh 0;
   border-bottom: 4px double #ffffff;
@@ -232,32 +204,34 @@ section .offerings h2 {
   text-align: center;
   align-content: center;
   height: 70px;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 section .offerings p {
   text-align: center;
-  font-size: 1.2rem;
+  text-wrap: balance;
+  font-size: 0.8rem;
   padding: 3vh 1vw;
 }
 
 section .offerings span {
   font-size: 0.9rem;
   text-align: center;
+  text-wrap: balance;
   padding: 1vh 0.5vw;
 }
 
 section .offerings p > i {
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: gray;
   margin: 0px 2vw;
 }
 
 footer {
   position: relative;
-  width: 90%;
+  width: 97%;
   margin: 80px auto 20px;
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   color: #3e92cc;
   background-color: #f8f9fa11;
   box-shadow: 3px 3px 10px #72ddf7;
@@ -266,21 +240,22 @@ footer {
 footer .footer-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+
   text-align: center;
 }
 
 footer .footer-container > div {
   border-right: 4px double #72ddf7;
+  border-bottom: 4px double #72ddf7;
 }
 
 footer .footer-container div img {
-  width: 10vw;
+  width: 7vw;
   grid-area: 1/1/2/2;
   padding: 30px 0;
 }
 footer .footer-container h3 {
-  font-size: 1.3rem;
+  font-size: 0.8rem;
   color: #72ddf7;
 }
 
@@ -288,7 +263,7 @@ footer .footer-container .socials {
   display: flex;
   flex-direction: column;
   grid-area: 1/2/2/3;
-  gap: 20px;
+  gap: 5px;
 }
 
 footer .footer-container .socials .footer-icon {
@@ -299,14 +274,15 @@ footer .footer-container .socials .footer-icon {
 }
 
 .fa-brands {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
+  color: #f8f9fa;
 }
 
 footer .footer-links ul {
   list-style: none;
-  padding-top: 20px;
-  line-height: 20px;
-  font-size: 1.1rem;
+  padding-top: 10px;
+  line-height: 5px;
+  font-size: 0.7rem;
 }
 
 footer .footer-links ul li {
@@ -314,15 +290,26 @@ footer .footer-links ul li {
 }
 
 footer .footer-links ul a {
-  color: #3e92cc;
+  color: #c7e2f5;
 }
 
 .ender {
   position: absolute;
-  right: -6%;
+  /* right: -6%; */
   font-size: 0.7rem;
   color: gray;
   text-align: center;
   background-color: #f8f9fa;
-  width: 100vw;
+  width: 1300px;
+}
+
+.ender > p {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+@media (max-width: 1229px) and (min-width: 1027px) {
+  .hero-statement {
+    text-align: center;
+  }
 }
