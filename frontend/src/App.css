@@ -1,0 +1,40 @@
+.bg-body-primary {
+  background-color: transparent;
+}
+
+.me-auto {
+  width: 600px;
+  justify-content: space-around;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.d-grid {
+  width: 20rem;
+}
+
+.d-grid button {
+  font-size: 1.2rem;
+}
+
+/* Projects */
+
+.my-projects {
+  text-align: center;
+  margin: 5% 0;
+}
+
+/* Contact Form */
+
+.contact-me {
+  margin-top: 5%;
+}
+
+.contact-me h1 {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+#formGridSource {
+  width: 49%;
+}

@@ -23,6 +23,7 @@ body {
 
 /* Navigation Bar */
 nav.nav-container {
+  position: relative;
   margin: 3px auto;
   width: 95%;
   display: flex;
@@ -58,6 +59,7 @@ a {
 }
 
 .hire-me {
+  position: relative;
   background-color: #3e92cc;
   font-size: 1.1em;
   letter-spacing: 2px;
@@ -66,6 +68,58 @@ a {
   border-radius: 30px;
   width: 250px;
   text-align: center;
+}
+
+.hire-me:hover {
+  animation: 2000ms spin ease infinite;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0;
+  inherits: true;
+}
+
+.hire-me::after {
+  content: "";
+  position: absolute;
+  background-image: conic-gradient(
+    from var(--angle),
+    #0b132b,
+    #1c2541,
+    #3a506b,
+    #5bc0be,
+    #6fffe9
+  );
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 1.5px;
+}
+
+@keyframes spin {
+  0% {
+    --angle: 0deg;
+  }
+  20% {
+    --angle: 72deg;
+  }
+  40% {
+    --angle: 144deg;
+  }
+  60% {
+    --angle: 216deg;
+  }
+  80% {
+    --angle: 288deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
 }
 
 .nav-icons {
@@ -178,6 +232,7 @@ main.hero .pitch .open-opp {
 
 section .offer-container {
   width: 1300px;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -256,6 +311,7 @@ footer .footer-container div img {
 }
 footer .footer-container h3 {
   font-size: 0.8rem;
+  padding-top: 10px;
   color: #72ddf7;
 }
 
