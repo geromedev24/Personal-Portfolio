@@ -1,3 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Manrope", "Poppins", "san-serif";
+}
+
+#root {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* NavBar */
+
 .bg-body-primary {
   background-color: transparent;
 }
@@ -9,19 +25,80 @@
   font-weight: 700;
 }
 
-.d-grid {
-  width: 20rem;
+.nav-link {
+  position: relative;
+  max-width: 100%;
 }
 
-.d-grid button {
+.nav-link::after {
+  content: "";
+  background: linear-gradient(to right, #0096c7, #48cae4, #ade8f4, #caf0f8);
+  border-radius: 2px;
+  height: 10%;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 6%;
+  transition: ease-out 400ms;
+}
+
+.nav-link:hover::after {
+  width: 90%;
+}
+
+.d-grid {
+  width: 12rem;
+}
+
+.nav-btn {
+  letter-spacing: 3px;
+}
+
+/* Main */
+.main-page {
+  margin-top: 10%;
+  min-height: 63vh;
+}
+
+.main-message {
+  padding-top: 5%;
+}
+
+.main-message div {
+  padding-left: 0px;
+}
+
+.msg-1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+
+.msg-2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.msg-3 {
   font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.mdl-btn {
+  width: 30%;
+  letter-spacing: 3px;
 }
 
 /* Projects */
 
-.my-projects {
+.projects-header {
   text-align: center;
   margin: 5% 0;
+}
+
+.projects {
+  min-height: 68vh;
 }
 
 /* Contact Form */
@@ -32,9 +109,43 @@
 
 .contact-me h1 {
   text-align: center;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 #formGridSource {
   width: 49%;
+}
+
+/* Footer */
+
+.marquee {
+  position: relative;
+  background-color: transparent;
+  height: 5vh;
+  width: 80%;
+  margin: 2vh 0;
+  max-width: 1250px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -300px;
+  }
+}
+
+.marq-logo {
+  width: 300px;
+  margin: 8px 0;
+  position: absolute;
+  opacity: 0.5;
+  font-size: 0.6rem;
+  left: 100%;
+  animation: scrollLeft 12000ms linear infinite;
+}
+
+.copyright {
+  font-size: 10px;
+  color: azure;
 }

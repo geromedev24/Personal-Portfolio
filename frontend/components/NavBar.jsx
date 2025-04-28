@@ -1,8 +1,8 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import Button from "react-bootstrap/Button";
+import { Container, Nav, Navbar, Button } from "react-bootstrap";
+// import Nav from "react-bootstrap/Nav";
+// import Navbar from "react-bootstrap/Navbar";
+// import Button from "react-bootstrap/Button";
 
 export default function NavBar() {
   return (
@@ -25,7 +25,12 @@ export default function NavBar() {
             <Nav.Link href="/projects">Projects</Nav.Link>
           </Nav>
           <div className="d-grid">
-            <Button variant="primary" size="lg" href="/contact">
+            <Button
+              className="nav-btn fs-6"
+              variant="primary"
+              size="lg"
+              href="/contact"
+            >
               Contact Me
             </Button>
           </div>
