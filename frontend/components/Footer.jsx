@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/esm/Row";
 import Stack from "react-bootstrap/esm/Stack";
 
 export default function Footer() {
-  const items = document.querySelectorAll(".marq-logo");
-  items.forEach((item, index) => {
-    item.style.animationDelay = `${-2400 * (5 - index)}ms`;
-  });
+  useEffect(() => {
+    const items = document.querySelectorAll(".marq-logo");
+    items.forEach((item, index) => {
+      item.style.animationDelay = `${-2400 * (5 - index)}ms`;
+    });
+  }, []);
+
   return (
     <>
       <div className="marquee">
