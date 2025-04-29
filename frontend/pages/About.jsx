@@ -12,27 +12,35 @@ export default function About() {
   };
 
   return (
-    <section>
+    <section className="mb-5">
       <Container className="about-sidepanel my-5">
-        <h1 className="text-center">A little something about me</h1>
-        <Row>
-          <Col className="col-3 mt-5">
-            <Stack gap={3}>
-              <aside>
-                <img
-                  src="../src/assets/images/eneru.png"
-                  alt="Profile picture"
-                  width={250}
-                />
+        <h1 className="text-center my-5">A little something about me</h1>
+        <Row className="gy-4">
+          <Col
+            xs={12}
+            md={3}
+            className="d-flex flex-column justify-content-center align-items-center"
+            style={{ minHeight: "100%" }}
+          >
+            <Stack gap={3} className="align-items-center align-items-md-start">
+              <aside className="text-center text-md-start my-5">
+                <div className="d-flex justify-content-center">
+                  <img
+                    src="../src/assets/images/eneru.png"
+                    alt="Profile picture"
+                    className="img-fluid"
+                    style={{ maxWidth: "250px" }}
+                  />
+                </div>
                 <div className="p-1">About</div>
                 <div className="p-1">Hobbies</div>
                 <div className="p-1">Others</div>
               </aside>
             </Stack>
           </Col>
-          <Col className="mt-5">
+          <Col xs={12} md={8}>
             <div className="about-info">
-              <h2 className="about-title text-center my-3">
+              <h2 className="about-title text-center my-4">
                 My name is Gerome
               </h2>
               <p>
@@ -55,7 +63,7 @@ export default function About() {
               </p>
             </div>
             <div className="about-info">
-              <h2 className="about-title text-center my-3">
+              <h2 className="about-title text-center my-4">
                 What I do when I'm not selling and coding
               </h2>
               <p>My family and I love travelling and exploring new places.</p>
@@ -73,9 +81,8 @@ export default function About() {
                 activeIndex={index}
                 onSelect={handleSelect}
                 interval={null}
-                data-bs-theme="dark"
               >
-                <Carousel.Item>
+                <Carousel.Item className="overlay-container">
                   <img
                     className="d-block w-100"
                     src="../src/assets/images/carousel-img-mph.jpg"
@@ -90,7 +97,7 @@ export default function About() {
                     </p>
                   </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item className="overlay-container">
                   <img
                     className="d-block w-100"
                     src="../src/assets/images/carousel-img-cmg.jpg"
@@ -106,7 +113,7 @@ export default function About() {
                     </p>
                   </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item className="overlay-container">
                   <img
                     className="d-block w-100"
                     src="../src/assets/images/carousel-img-bgo.jpg"
@@ -116,14 +123,13 @@ export default function About() {
                     <h5 className="car-caption">Baguio</h5>
                     <p className="car-description">
                       Strawberries, horseback riding, botanical gardens and
-                      park, and a nice cuddle weather. Baguio has been close to
-                      our heart especially when the city turns a bit hot and
-                      humid. We enjoy the nature and how we can sit and enjoy
-                      hot chocolate and coffee everyday!
+                      park, and a nice cuddle weather. We enjoy the nature and
+                      how we can sit and enjoy hot chocolate and coffee
+                      everyday!
                     </p>
                   </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item className="overlay-container">
                   <img
                     className="d-block w-100"
                     src="../src/assets/images/carousel-img-tgy.jpg"

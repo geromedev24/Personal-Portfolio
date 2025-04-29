@@ -109,16 +109,62 @@ aside {
   text-align: justify;
 }
 
-.carousel-item img {
+.overlay-container {
+  position: relative;
   height: 50vh;
+  overflow: hidden;
 }
 
-.carousel-caption .car-caption {
-  color: white;
+.overlay-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.car-description {
+.overlay-container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 35%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.carousel-caption {
+  position: absolute;
+  z-index: 2; /* Place it above the overlay */
   color: white;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9); /* improve readability */
+  text-wrap: balance;
+}
+
+.carousel .carousel-indicators button {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #888;
+  opacity: 0.5;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.carousel-indicators [data-bs-target]:hover {
+  opacity: 0.8;
+  background-color: #333;
+  transform: scale(1.1);
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: #000;
+  transform: scale(1.2);
 }
 
 /* Projects */
@@ -154,7 +200,7 @@ aside {
   background-color: transparent;
   height: 5vh;
   width: 80%;
-  margin: 2vh 0;
+  margin: 12vh 0 2vh;
   max-width: 1250px;
   margin-inline: auto;
   overflow: hidden;
