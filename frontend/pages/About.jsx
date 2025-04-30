@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Container from "react-bootstrap/esm/Container";
-import { Row, Col, Stack } from "react-bootstrap/esm";
+import { Row, Col, Stack, Button } from "react-bootstrap/esm";
 
 import Carousel from "react-bootstrap/Carousel";
 
@@ -12,8 +12,8 @@ export default function About() {
   };
 
   return (
-    <section className="mb-5">
-      <Container className="about-sidepanel my-5">
+    <section className="about-container">
+      <Container>
         <h1 className="text-center my-5">A little something about me</h1>
         <Row className="gy-4">
           <Col
@@ -22,27 +22,30 @@ export default function About() {
             className="d-flex flex-column justify-content-center align-items-center"
             style={{ minHeight: "100%" }}
           >
-            <Stack gap={3} className="align-items-center align-items-md-start">
-              <aside className="text-center text-md-start my-5">
-                <div className="d-flex justify-content-center">
+            <Stack gap={3} className="align-items-center">
+              <aside className="text-center d-flex flex-column align-items-center">
+                <div>
                   <img
                     src="../src/assets/images/eneru.png"
                     alt="Profile picture"
                     className="img-fluid"
-                    style={{ maxWidth: "250px" }}
+                    style={{ maxWidth: "190px" }}
                   />
                 </div>
-                <div className="p-1">About</div>
-                <div className="p-1">Hobbies</div>
-                <div className="p-1">Others</div>
+                <div className="sidebar-button d-flex flex-wrap justify-content-center gap-2 mt-3">
+                  <Button variant="primary" as={Col}>
+                    About
+                  </Button>
+                  <Button variant="secondary" as={Col}>
+                    Fun Facts
+                  </Button>
+                  <Button variant="success">My Blog</Button>
+                </div>
               </aside>
             </Stack>
           </Col>
           <Col xs={12} md={8}>
             <div className="about-info">
-              <h2 className="about-title text-center my-4">
-                My name is Gerome
-              </h2>
               <p>
                 Over the past couple of years, I have worked as someone who
                 sells ideas to people who needs help in getting things done more
@@ -63,9 +66,7 @@ export default function About() {
               </p>
             </div>
             <div className="about-info">
-              <h2 className="about-title text-center my-4">
-                What I do when I'm not selling and coding
-              </h2>
+              <h2 className="about-title text-start">Lazy Time</h2>
               <p>My family and I love travelling and exploring new places.</p>
               <p>
                 It's our way to celebrate success and enjoy the company of each
@@ -76,75 +77,99 @@ export default function About() {
                 Here are some of the places we've been through and I would love
                 to hear from you any suggestions or recommendations where we can
                 have our next adventure.
+                <Carousel
+                  activeIndex={index}
+                  onSelect={handleSelect}
+                  interval={null}
+                >
+                  <Carousel.Item className="overlay-container">
+                    <img
+                      className="d-block img-fluid"
+                      src="../src/assets/images/carousel-img-mph.jpg"
+                      alt="Boracay"
+                    />
+                    <Carousel.Caption>
+                      <h5 className="car-caption">Boracay Island</h5>
+                      <p className="car-description">
+                        Our first pick if the year has been a tremendous
+                        success. Far from the metro with views and ambiance that
+                        captures anyone's heart
+                      </p>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                  <Carousel.Item className="overlay-container">
+                    <img
+                      className="d-block img-fluid"
+                      src="../src/assets/images/carousel-img-cmg.jpg"
+                      alt="Camiguin Island"
+                    />
+                    <Carousel.Caption>
+                      <h5 className="car-caption">Camiguin Island</h5>
+                      <p className="car-description">
+                        My wife's hometown island. This island feels so much
+                        like home especially with families and friends that we
+                        miss. We love visiting the island because life here is
+                        so relaxed and simple.
+                      </p>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                  <Carousel.Item className="overlay-container">
+                    <img
+                      className="d-block img-fluid"
+                      src="../src/assets/images/carousel-img-bgo.jpg"
+                      alt="Baguio"
+                    />
+                    <Carousel.Caption>
+                      <h5 className="car-caption">Baguio</h5>
+                      <p className="car-description">
+                        Strawberries, horseback riding, botanical gardens and
+                        park, and a nice cuddle weather. We enjoy the nature and
+                        how we can sit and enjoy hot chocolate and coffee
+                        everyday!
+                      </p>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                  <Carousel.Item className="overlay-container">
+                    <img
+                      className="d-block img-fluid"
+                      src="../src/assets/images/carousel-img-tgy.jpg"
+                      alt="Tagaytay"
+                    />
+                    <Carousel.Caption>
+                      <h5 className="car-caption">Tagaytay</h5>
+                      <p className="car-description">
+                        Our budget destination since it's just an hour away. We
+                        love eating a nice warm bulalo and yema cake while
+                        enjoying the Taal volcano's view.
+                      </p>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                </Carousel>
               </p>
-              <Carousel
-                activeIndex={index}
-                onSelect={handleSelect}
-                interval={null}
-              >
-                <Carousel.Item className="overlay-container">
-                  <img
-                    className="d-block w-100"
-                    src="../src/assets/images/carousel-img-mph.jpg"
-                    alt="Boracay"
-                  />
-                  <Carousel.Caption>
-                    <h5 className="car-caption">Boracay Island</h5>
-                    <p className="car-description">
-                      Our first pick if the year has been a tremendous success.
-                      Far from the metro with views and ambiance that captures
-                      anyone's heart
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item className="overlay-container">
-                  <img
-                    className="d-block w-100"
-                    src="../src/assets/images/carousel-img-cmg.jpg"
-                    alt="Camiguin Island"
-                  />
-                  <Carousel.Caption>
-                    <h5 className="car-caption">Camiguin Island</h5>
-                    <p className="car-description">
-                      My wife's hometown island. This island feels so much like
-                      home especially with families and friends that we miss. We
-                      love visiting the island because life here is so relaxed
-                      and simple.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item className="overlay-container">
-                  <img
-                    className="d-block w-100"
-                    src="../src/assets/images/carousel-img-bgo.jpg"
-                    alt="Baguio"
-                  />
-                  <Carousel.Caption>
-                    <h5 className="car-caption">Baguio</h5>
-                    <p className="car-description">
-                      Strawberries, horseback riding, botanical gardens and
-                      park, and a nice cuddle weather. We enjoy the nature and
-                      how we can sit and enjoy hot chocolate and coffee
-                      everyday!
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item className="overlay-container">
-                  <img
-                    className="d-block w-100"
-                    src="../src/assets/images/carousel-img-tgy.jpg"
-                    alt="Tagaytay"
-                  />
-                  <Carousel.Caption>
-                    <h5 className="car-caption">Tagaytay</h5>
-                    <p className="car-description">
-                      Our budget destination since it's just an hour away. We
-                      love eating a nice warm bulalo and yema cake while
-                      enjoying the Taal volcano's view.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-              </Carousel>
+            </div>
+            <div className="about-info">
+              <h2 className="about-title text-start">Fun Facts</h2>
+              <Stack gap={4}>
+                <div className="fun-fact">
+                  🎵 I play a little bit of acoustic and bass guitar. 🎵
+                </div>
+                <div className="fun-fact">
+                  🚀 I love playing MMORPG games. 🚀
+                </div>
+                <div className="fun-fact">
+                  🤐 I hate swimming under direct sunlight. 🤐
+                </div>
+                <div className="fun-fact">
+                  ☕ I am a sucker for coffee regardless of the weather. ☕
+                </div>
+                <div className="fun-fact">
+                  😆 My favorite place is Japan, though I've never been there.
+                  😆
+                </div>
+              </Stack>
+            </div>
+            <div className="about-info">
+              <h2 className="about-title">My Blog</h2>
             </div>
           </Col>
         </Row>

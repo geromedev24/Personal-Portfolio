@@ -11,6 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Container from "react-bootstrap/esm/Container";
+import Marquee from "../components/Marquee";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           </Routes>
         </Container>
       </Router>
+      <Marquee></Marquee>
       <Footer></Footer>
     </>
   );
