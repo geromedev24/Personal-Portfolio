@@ -1,8 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar, Button } from "react-bootstrap";
-// import Nav from "react-bootstrap/Nav";
-// import Navbar from "react-bootstrap/Navbar";
-// import Button from "react-bootstrap/Button";
+import socLinks from "../src/data/socials";
 
 export default function NavBar() {
   return (
@@ -18,21 +16,37 @@ export default function NavBar() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="nav-link-contain" size="lg">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/experience">Experience</Nav.Link>
             <Nav.Link href="/projects">Projects</Nav.Link>
           </Nav>
-          <div className="d-grid">
-            <Button
-              className="nav-btn fs-6"
-              variant="primary"
-              size="lg"
-              href="/contact"
-            >
-              Contact Me
-            </Button>
+          <div className="socials-contact">
+            <div className="socials">
+              {socLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={link.name}
+                  style={{ color: "inherit", textDecoration: "none" }}
+                >
+                  <i className={link.iconClass}></i>
+                </a>
+              ))}
+            </div>
+            <div className="d-grid">
+              <Button
+                className="nav-btn"
+                variant="primary"
+                size="lg"
+                href="/contact"
+              >
+                Contact Me
+              </Button>
+            </div>
           </div>
         </Navbar.Collapse>
       </Container>

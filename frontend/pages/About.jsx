@@ -14,7 +14,9 @@ export default function About() {
   return (
     <section className="about-container">
       <Container>
-        <h1 className="text-center my-5">A little something about me</h1>
+        <h1 className="text-center my-5" id="about">
+          A little something about me
+        </h1>
         <Row className="gy-4">
           <Col
             xs={12}
@@ -33,13 +35,15 @@ export default function About() {
                   />
                 </div>
                 <div className="sidebar-button d-flex flex-wrap justify-content-center gap-2 mt-3">
-                  <Button variant="primary" as={Col}>
+                  <Button variant="primary" href="#about">
                     About
                   </Button>
-                  <Button variant="secondary" as={Col}>
+                  <Button variant="secondary" href="#fun-facts">
                     Fun Facts
                   </Button>
-                  <Button variant="success">My Blog</Button>
+                  <Button variant="success" href="#my-blog">
+                    My Blog
+                  </Button>
                 </div>
               </aside>
             </Stack>
@@ -148,7 +152,9 @@ export default function About() {
               </p>
             </div>
             <div className="about-info">
-              <h2 className="about-title text-start">Fun Facts</h2>
+              <h2 className="about-title text-start" id="fun-facts">
+                Fun Facts
+              </h2>
               <Stack gap={4}>
                 <div className="fun-fact">
                   🎵 I play a little bit of acoustic and bass guitar. 🎵
@@ -169,7 +175,9 @@ export default function About() {
               </Stack>
             </div>
             <div className="about-info">
-              <h2 className="about-title">My Blog</h2>
+              <h2 className="about-title" id="my-blog">
+                My Blog
+              </h2>
             </div>
           </Col>
         </Row>

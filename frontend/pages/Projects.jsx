@@ -6,24 +6,21 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
 // research to incorporate prop and map method
+import projectCards from "../src/data/projectcards";
 
 export default function Projects() {
   return (
     <>
       <h1 className="projects-header"> Checkout my Projects! </h1>
       <Container className="projects">
-        <Row xs={1} md={2} className="g-4">
-          {Array.from({ length: 4 }).map((_, idx) => (
-            <Col key={idx}>
+        <Row xs={1} md={2} className="g-6">
+          {Array.from(projectCards).map((card) => (
+            <Col key={card.id} className="card-container">
               <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
+                <Card.Img variant="top" src={card.img} />
                 <Card.Body>
-                  <Card.Title>Card title</Card.Title>
-                  <Card.Text>
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </Card.Text>
+                  <Card.Title>{card.title}</Card.Title>
+                  <Card.Text>{card.description}</Card.Text>
                   <Button variant="primary">Learn More</Button>
                 </Card.Body>
               </Card>

@@ -30,16 +30,15 @@ export default function Home() {
               Let's turn your IDEAS into websites! 🚀💯
             </div>
           </Stack>
-
-          {/* Modal */}
           <Button
-            className="mt-5 mdl-btn fs-5"
+            className="mt-5 mdl-btn"
             variant="primary"
             onClick={handleShow}
           >
             Hire me!
           </Button>
 
+          {/* Modal */}
           <Modal size="md" centered show={show} onHide={handleClose}>
             <Modal.Header closeButton>
               <Modal.Title>Let's Work Together</Modal.Title>
