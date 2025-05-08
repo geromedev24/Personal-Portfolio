@@ -13,7 +13,7 @@ export default function Projects() {
     <>
       <h1 className="projects-header"> Checkout my Projects! </h1>
       <Container className="projects">
-        <Row xs={1} md={2} className="g-6">
+        <Row xs={1} md={3} className="g-6">
           {Array.from(projectCards).map((card) => (
             <Col key={card.id} className="card-container">
               <Card>

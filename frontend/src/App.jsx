@@ -6,6 +6,7 @@ import About from "../pages/About";
 import Experience from "../pages/Experience";
 import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
+import PageNotFound from "../pages/PageNotFound";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -28,6 +29,7 @@ function App() {
             ></Route>
             <Route path="/projects" element={<Projects></Projects>}></Route>
             <Route path="/contact" element={<Contact></Contact>}></Route>
+            <Route path="*" element={<PageNotFound></PageNotFound>}></Route>
           </Routes>
         </Container>
       </Router>

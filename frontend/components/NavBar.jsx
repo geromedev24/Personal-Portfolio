@@ -7,12 +7,13 @@ export default function NavBar() {
     <Navbar expand="lg" className="bg-body-primary">
       <Container>
         <Navbar.Brand href="/">
-          <img
+          <div className="brand-logo">GD</div>
+          {/* <img
             src="./src/assets/Logo/MLC Logo Name.png"
             height="30"
             className="d-inline-block align-top"
             alt="MidLife Coder logo"
-          />
+          /> */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
