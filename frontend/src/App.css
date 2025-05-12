@@ -17,7 +17,22 @@
 
 .bg-body-primary {
   background-color: transparent;
+  animation: navPull 850ms ease-out forwards;
 }
+
+/* @keyframes navPull {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    transform: scale(1);
+  }
+} */
+
 .brand-logo {
   font-weight: 800;
   font-size: 2rem;
@@ -76,7 +91,17 @@
   gap: 1.1vw;
   font-size: 1.6rem;
   margin: 0 0.5rem;
-  color: #3a3f4152;
+}
+
+.socials i {
+  color: rgb(94, 93, 93, 0.4);
+}
+
+.socials i:hover {
+  color: black;
+  opacity: 0.8;
+  transform: scale(1.5);
+  transition: ease-in-out 500ms;
 }
 
 /* Main */
@@ -87,6 +112,18 @@
 
 .main-message {
   padding-top: 5%;
+  animation: pushRight ease-out 1300ms forwards;
+}
+
+@keyframes pushRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .main-message div {
@@ -113,6 +150,16 @@
 .mdl-btn {
   width: 35%;
   letter-spacing: 5px;
+}
+
+.main-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-image img {
+  max-height: 450px;
 }
 
 /* About */

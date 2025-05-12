@@ -124,7 +124,7 @@ export default function About() {
                       alt="Baguio"
                     />
                     <Carousel.Caption>
-                      <h5 className="car-caption">Baguio</h5>
+                      <h5 className="car-caption">Baguio City</h5>
                       <p className="car-description">
                         Strawberries, horseback riding, botanical gardens and
                         park, and a nice cuddle weather. We enjoy the nature and
@@ -140,7 +140,7 @@ export default function About() {
                       alt="Tagaytay"
                     />
                     <Carousel.Caption>
-                      <h5 className="car-caption">Tagaytay</h5>
+                      <h5 className="car-caption">Tagaytay City</h5>
                       <p className="car-description">
                         Our budget destination since it's just an hour away. We
                         love eating a nice warm bulalo and yema cake while

@@ -83,7 +83,9 @@ export default function Home() {
             </Modal.Footer>
           </Modal>
         </Col>
-        <Col className="main-image">Image</Col>
+        <Col className="main-image">
+          <img src="../src/assets/images/Eneru.png" alt="profile-picture" />
+        </Col>
       </Row>
     </Container>
   );
